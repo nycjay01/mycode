@@ -1,3 +1,6 @@
+//Creates s3 bucket for static website with cloud front redirection instead of using s3 endpoint name
+
+
 provider "aws" {
   region = "us-east-1"
 }
