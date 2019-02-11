@@ -1,0 +1,7 @@
+dis-prod-rg-taxedm2:azurerm_app_service-
+dis-prod-rg-taxedm2:azurerm_app_service_plan-
+dis-prod-rg-taxedm2:azurerm_sql_database-
+dis-prod-rg-taxedm2:azurerm_sql_server-
+dis-prod-rg-taxedm2:azurerm_storage_account-
+dis-prod-rg-taxedm2:azurerm_storage_container-
+dis-prod-rg-taxedm2:azurerm_storage_share-
