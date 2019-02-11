@@ -1,22 +1,11 @@
-1- Create a bucket 
-  aws s3api create-bucket --bucket=terraform-serverless-example --region=us-east-1
+az_peer_2subs.tf
 
-2- Copy your zip file to your new bucket
-  aws s3 cp example.zip s3://terraform-serverless-example/v1.0.0/example.zip
+Creates a hub and spoke network with peering to a vnet in another subscription on azure.
 
-3- in your downloaded git clone folder (serverless-lambda) run terraform init
+wp_jb.tf
 
-4- Run terraform apply. You should see a api url with "Hello World!" in a web browser pointing to your lambda/api url.
-   terraform apply -var="app_version=1.0.0"
+Creates a load balanced wordpress CMS and website on AWS. (under construction)
 
-5- Change your code. Change "Hello World" in main.js and rezip the file and copy the file using the command in step 2 but with a new version number
-   aws s3 cp example.zip s3://terraform-serverless-example/v1.0.1/example.zip
+stack-intranet.tf
 
-6- run terraform apply with a new version
-   terraform apply -var="app_version=1.0.1"
-
-7- You should see the out put URL with a new message
-
-    base_url = https://bkqhuuz8r8.execute-api.us-east-1.amazonaws.com/test (this is an example URL)
-
-8- For more detail see https://learn.hashicorp.com/terraform/aws/lambda-api-gateway
+creates s3 bucket for static website hosting with cloud front as the the URL

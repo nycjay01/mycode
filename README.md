@@ -1,11 +1,17 @@
-az_peer_2subs.tf
+build a instance from a packer image
+*You will need packer and terraform installed
 
-Creates a hub and spoke network with peering to a vnet in another subscription on azure.
+1- after packer is installed (verify with packer --version) validate packer.json file
+    packer validate packertest.json
 
-wp_jb.tf
+2- build the image 
+   packer build \
+   -var 'aws_access_key=YOUR ACCESS KEY' \
+   -var 'aws_secret_key=YOUR SECRET KEY' \
+   packertest.json
 
-Creates a load balanced wordpress CMS and website on AWS. (under construction)
-
-stack-intranet.tf
-
-creates s3 bucket for static website hosting with cloud front as the the URL
+3- after image completes run the packer.tf add the ami number created from the step above and add it to the packer.tf file (should be ami-00000000000000000) after modifying the packer.tf file run the tf apply:
+   terraform init (incase you dont have tf installed)
+   terraform plan  (incase you want to see the plan)
+   terraform apply
+   yes (type yes to deploy no do abort)
