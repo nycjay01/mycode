@@ -3,5 +3,5 @@ resource "azurerm_app_service" "dis-prod-incentives-staging" {
   name                = "dis-prod-incentives-staging"
   location            = "East US"
   resource_group_name = "dis-prod-rg-incentives"
-  app_service_plan_id = "/subscriptions/dc3c9354-6ca9-41a5-9559-479fbccf3217/resourceGroups/dis-prod-shared-resources-west/providers/Microsoft.Web/serverFarms/dis-prod-appsrv-plan-west"
+  app_service_plan_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dis-prod-shared-resources-west/providers/Microsoft.Web/serverFarms/dis-prod-appsrv-plan-west"
 }

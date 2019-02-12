@@ -3,7 +3,7 @@ resource "azurerm_app_service" "ws-rac" {
   name                = "dis-prod-ws-rac"
   location            = "East US"
   resource_group_name = "dis-prod-rg-rac"
-  app_service_plan_id = "/subscriptions/dc3c9354-6ca9-41a5-9559-479fbccf3217/resourceGroups/dis-prod-shared-resources-east/providers/Microsoft.Web/serverFarms/dis-prod-appsrv-plan-east" 
+  app_service_plan_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/dis-prod-shared-resources-east/providers/Microsoft.Web/serverFarms/dis-prod-appsrv-plan-east" 
 }
 
 resource "azurerm_app_service_custom_hostname_binding" "ws-rac" {
