@@ -2,6 +2,7 @@ build a instance from a packer image
 *You will need packer and terraform installed
 
 1- after packer is installed (verify with packer --version) 
+
 2- validate packer.json file
     packer validate packertest.json
 
