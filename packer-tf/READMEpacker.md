@@ -4,8 +4,9 @@ build a instance from a packer image
 1- after packer is installed (verify with packer --version) 
 
 2- validate packer.json file
-    packer validate packertest.json
-
+```
+    $packer validate packertest.json
+```
 3- build the image 
    packer build \
    -var 'aws_access_key=YOUR ACCESS KEY' \
