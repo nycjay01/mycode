@@ -16,8 +16,10 @@ build a instance from a packer image
    packertest.json
 ```
 
-4- after image completes run the packer.tf add the ami number created from the step above and add it to the packer.tf file (should be ami-00000000000000000) after modifying the packer.tf file run the tf apply:
+4- after image completes run the packer.tf add the ami number created from the step above and add it to the packer.tf file (should be ami-00000000000000000) after modifying the packer.tf file you can start your terraform deployment:
+```
    terraform init (in the directory you have your tf files in *requires terraform installed)
    terraform plan  (incase you want to see the plan)
    terraform apply
    yes (type yes to deploy no do abort)
+```
